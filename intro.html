@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -124,5 +122,151 @@
     </div>
   </header>
 
+  <section id="recursos" class="ap-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="ap-eyebrow">Como funciona</span>
+        <h2 class="ap-section-title">Tudo que o produtor precisa, num só painel</h2>
+        <p class="ap-section-sub mx-auto">
+          Três frentes de trabalho que reduzem perdas e poupam o tempo da equipe de campo.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card ap-card h-100">
+            <div class="card-body">
+              <div class="ap-card-icon"><i class="bi bi-activity"></i></div>
+              <h3 class="card-title h5">Monitoramento contínuo</h3>
+              <p class="card-text">
+                Sensores nas coleiras leem sinais vitais e movimento de cada animal a cada
+                poucos minutos, sem precisar do manejo no curral.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card ap-card h-100">
+            <div class="card-body">
+              <div class="ap-card-icon"><i class="bi bi-bell"></i></div>
+              <h3 class="card-title h5">Alertas precoces</h3>
+              <p class="card-text">
+                Febre, queda de atividade ou afastamento do lote? Você é avisado no celular
+                a tempo de isolar e tratar antes do contágio.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card ap-card h-100">
+            <div class="card-body">
+              <div class="ap-card-icon"><i class="bi bi-graph-up-arrow"></i></div>
+              <h3 class="card-title h5">Relatórios e histórico</h3>
+              <p class="card-text">
+                Gráficos de saúde por lote e por animal ajudam o veterinário a decidir com
+                base em dados — e a comprovar a sanidade do rebanho.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="ap-section ap-section-alt">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="ap-eyebrow">Quem usa</span>
+        <h2 class="ap-section-title">Confiança de quem está no campo</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div id="carrosselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <blockquote class="ap-quote">
+                  <p>“Peguei uma tristeza bovina logo no começo num lote de bezerros.
+                    O alerta chegou antes de qualquer sintoma visível. Salvou o lote.”</p>
+                  <footer>— Dona Marta Ribeiro, Fazenda Boa Esperança · Porto Nacional/TO</footer>
+                </blockquote>
+              </div>
+              <div class="carousel-item">
+                <blockquote class="ap-quote">
+                  <p>“Diminuí as viagens até o pasto. Abro o painel pelo celular e já sei
+                    qual animal precisa de atenção. Economia de tempo absurda.”</p>
+                  <footer>— Júnior Camargo, Pecuarista · Palmas/TO</footer>
+                </blockquote>
+              </div>
+              <div class="carousel-item">
+                <blockquote class="ap-quote">
+                  <p>“Como veterinária, o histórico de dados mudou minha rotina. As decisões
+                    deixaram de ser no 'achismo' e passaram a ser com base em evidência.”</p>
+                  <footer>— Dra. Letícia Souza, Médica-veterinária</footer>
+                </blockquote>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDepoimentos" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosselDepoimentos" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo" class="ap-section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-12 col-lg-8">
+          <span class="ap-eyebrow">Experimente</span>
+          <h2 class="ap-section-title">Ative uma simulação do painel</h2>
+
+          <p id="mensagemDemo" class="ap-demo-msg">
+            Clique no botão abaixo para iniciar uma demonstração do monitoramento.
+          </p>
+
+          <button id="botaoDemo" class="btn ap-btn-accent btn-lg px-4">
+            <i class="bi bi-play-circle me-2"></i>Ativar demonstração
+          </button>
+
+          <p class="ap-demo-counter mt-3">
+            Demonstrações ativadas: <span id="contadorCliques">0</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ap-footer">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-12 col-md-6">
+          <a class="navbar-brand d-flex align-items-center gap-2 text-white mb-2" href="#inicio">
+            <i class="bi bi-broadcast-pin"></i>
+            <span>Agro<span class="ap-brand-accent">Pulse</span></span>
+          </a>
+          <p class="ap-footer-text mb-0">
+            Tecnologia para uma pecuária mais saudável e produtiva.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <p class="ap-footer-text mb-1">contato@agropulse.com.br · Palmas/TO</p>
+          <p class="ap-footer-text mb-0">
+            &copy; <span id="anoAtual">2025</span> AgroPulse · Projeto acadêmico fictício.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
