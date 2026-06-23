@@ -1,4 +1,4 @@
-Primeiro commit do Lucas -
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -26,5 +26,103 @@ Primeiro commit do Lucas -
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  </body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top ap-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+        <i class="bi bi-broadcast-pin"></i>
+        <span>Agro<span class="ap-brand-accent">Pulse</span></span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#demo">Demonstração</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn ap-btn-accent btn-sm px-3" href="#demo">Solicitar demo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio" class="ap-hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-12 col-lg-6">
+          <span class="ap-eyebrow">Pecuária de precisão</span>
+          <h1 class="ap-hero-title">
+            A saúde do seu rebanho, <span class="ap-brand-accent">batendo em tempo real.</span>
+          </h1>
+          <p class="ap-hero-lead">
+            Coleiras inteligentes da AgroPulse medem temperatura, movimento e localização de
+            cada animal. Você recebe alertas no celular antes de a doença se espalhar — e
+            acompanha tudo direto do curral ou de casa.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#demo" class="btn ap-btn-accent btn-lg px-4">Solicitar demonstração</a>
+            <a href="#recursos" class="btn ap-btn-outline btn-lg px-4">Ver recursos</a>
+          </div>
+
+          <div class="row ap-stats mt-5 g-4">
+            <div class="col-4">
+              <p class="ap-stat-num">-32%</p>
+              <p class="ap-stat-label">de perdas no rebanho</p>
+            </div>
+            <div class="col-4">
+              <p class="ap-stat-num">24h</p>
+              <p class="ap-stat-label">monitorando sem parar</p>
+            </div>
+            <div class="col-4">
+              <p class="ap-stat-num">+5 mil</p>
+              <p class="ap-stat-label">animais conectados</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="ap-monitor-card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="ap-monitor-tag"><i class="bi bi-circle-fill ap-live-dot"></i> AO VIVO</span>
+              <span class="ap-monitor-id">Boi #2741 · Lote A</span>
+            </div>
+
+            <svg class="ap-pulse" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M0,60 L70,60 L90,60 L105,20 L120,100 L140,40 L160,60 L230,60 L250,60 L265,30 L280,90 L300,60 L400,60" />
+            </svg>
+
+            <div class="row text-center mt-3 g-2">
+              <div class="col-4">
+                <p class="ap-metric-num">38,9°C</p>
+                <p class="ap-metric-label">Temperatura</p>
+              </div>
+              <div class="col-4">
+                <p class="ap-metric-num">7,2 km</p>
+                <p class="ap-metric-label">Deslocamento</p>
+              </div>
+              <div class="col-4">
+                <p class="ap-metric-num ap-metric-ok">Estável</p>
+                <p class="ap-metric-label">Status</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+</body>
 </html>
