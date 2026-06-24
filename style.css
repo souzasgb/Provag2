@@ -1,0 +1,66 @@
+/* ===================================================================
+   AgroPulse — estilo personalizado
+   Carregado DEPOIS do Bootstrap para sobrescrever o que for preciso.
+   =================================================================== */
+
+:root {
+  --ap-verde-escuro: #143601;
+  --ap-verde: #245501;
+  --ap-verde-claro: #538d22;
+  --ap-ambar: #e9a319;   /* cor de destaque / "pulso" */
+  --ap-creme: #faf8f3;
+  --ap-tinta: #1a2417;
+}
+
+/* ----------------------------- Base ----------------------------- */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--ap-tinta);
+  background-color: var(--ap-creme);
+  /* compensa a navbar fixa no topo ao rolar para as âncoras */
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: "Sora", system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.ap-brand-accent { color: var(--ap-ambar); }
+
+/* Detalhe acima de cada título de seção */
+.ap-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ap-verde-claro);
+  margin-bottom: 0.75rem;
+}
+
+/* ----------------------------- Botões ----------------------------- */
+.ap-btn-accent {
+  background-color: var(--ap-ambar);
+  border: none;
+  color: #2a1d00;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.ap-btn-accent:hover {
+  background-color: #f4b53d;
+  color: #2a1d00;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(233, 163, 25, 0.35);
+}
+.ap-btn-outline {
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 999px;
+}
+.ap-btn-outline:hover {
+  background-color: #fff;
+  color: var(--ap-verde-escuro);
+}
