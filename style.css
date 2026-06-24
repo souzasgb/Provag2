@@ -1,178 +1,4 @@
-/* ===================================================================
-   AgroPulse — estilo personalizado
-   Carregado DEPOIS do Bootstrap para sobrescrever o que for preciso.
-   =================================================================== */
 
-:root {
-  --ap-verde-escuro: #143601;
-  --ap-verde: #245501;
-  --ap-verde-claro: #538d22;
-  --ap-ambar: #e9a319;   /* cor de destaque / "pulso" */
-  --ap-creme: #faf8f3;
-  --ap-tinta: #1a2417;
-}
-
-/* ----------------------------- Base ----------------------------- */
-body {
-  font-family: "Inter", system-ui, sans-serif;
-  color: var(--ap-tinta);
-  background-color: var(--ap-creme);
-  /* compensa a navbar fixa no topo ao rolar para as âncoras */
-  scroll-behavior: smooth;
-}
-
-h1, h2, h3, .navbar-brand {
-  font-family: "Sora", system-ui, sans-serif;
-  letter-spacing: -0.01em;
-}
-
-.ap-brand-accent { color: var(--ap-ambar); }
-
-/* Detalhe acima de cada título de seção */
-.ap-eyebrow {
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ap-verde-claro);
-  margin-bottom: 0.75rem;
-}
-
-/* ----------------------------- Botões ----------------------------- */
-.ap-btn-accent {
-  background-color: var(--ap-ambar);
-  border: none;
-  color: #2a1d00;
-  font-weight: 600;
-  border-radius: 999px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-.ap-btn-accent:hover {
-  background-color: #f4b53d;
-  color: #2a1d00;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(233, 163, 25, 0.35);
-}
-.ap-btn-outline {
-  border: 1.5px solid rgba(255, 255, 255, 0.6);
-  color: #fff;
-  font-weight: 600;
-  border-radius: 999px;
-}
-.ap-btn-outline:hover {
-  background-color: #fff;
-  color: var(--ap-verde-escuro);
-}
-
-/* ----------------------------- Navbar ----------------------------- */
-.ap-navbar {
-  background-color: rgba(20, 54, 1, 0.92);
-  backdrop-filter: blur(6px);
-}
-.ap-navbar .nav-link { font-weight: 500; }
-.ap-navbar .nav-link:hover { color: var(--ap-ambar); }
-
-/* ----------------------------- Hero ----------------------------- */
-.ap-hero {
-  background: radial-gradient(120% 120% at 80% 0%, #2f6a12 0%, var(--ap-verde-escuro) 55%);
-  color: #fff;
-  padding: 9rem 0 5rem;
-}
-.ap-hero-title {
-  font-size: clamp(2.1rem, 5vw, 3.4rem);
-  font-weight: 800;
-  line-height: 1.08;
-  margin-bottom: 1.25rem;
-}
-.ap-hero-lead {
-  font-size: 1.12rem;
-  color: rgba(255, 255, 255, 0.85);
-  max-width: 33rem;
-  margin-bottom: 2rem;
-}
-.ap-stat-num {
-  font-family: "Sora", sans-serif;
-  font-size: clamp(1.3rem, 3vw, 1.8rem);
-  font-weight: 700;
-  color: var(--ap-ambar);
-  margin-bottom: 0.1rem;
-}
-.ap-stat-label {
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0;
-}
-
-/* Cartão de monitoramento + linha de pulso (assinatura visual) */
-.ap-monitor-card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  padding: 1.5rem;
-  backdrop-filter: blur(4px);
-}
-.ap-monitor-tag {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: var(--ap-ambar);
-}
-.ap-live-dot {
-  font-size: 0.5rem;
-  vertical-align: middle;
-  margin-right: 0.3rem;
-  animation: ap-blink 1.4s infinite;
-}
-.ap-monitor-id { font-size: 0.78rem; color: rgba(255,255,255,0.6); }
-
-.ap-metric-num {
-  font-family: "Sora", sans-serif;
-  font-weight: 700;
-  font-size: 1.15rem;
-  margin: 0;
-}
-.ap-metric-ok { color: #8fe06a; }
-.ap-metric-label { font-size: 0.72rem; color: rgba(255,255,255,0.6); margin: 0; }
-
-/* ----------------------------- Seções ----------------------------- */
-.ap-section { padding: 5rem 0; }
-.ap-section-alt { background-color: #f1efe6; }
-.ap-section-title {
-  font-size: clamp(1.7rem, 4vw, 2.4rem);
-  font-weight: 700;
-  color: var(--ap-verde-escuro);
-}
-.ap-section-sub {
-  color: #5a6353;
-  max-width: 34rem;
-  font-size: 1.05rem;
-}
-
-/* Cards de recursos */
-.ap-card {
-  border: 1px solid #e7e3d6;
-  border-radius: 16px;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-.ap-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(20, 54, 1, 0.12);
-}
-.ap-card .card-body { padding: 1.8rem; }
-.ap-card-icon {
-  width: 52px;
-  height: 52px;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
-  background: rgba(83, 141, 34, 0.15);
-  color: var(--ap-verde);
-  font-size: 1.4rem;
-  margin-bottom: 1.1rem;
-}
-.ap-card .card-title { color: var(--ap-verde-escuro); }
-.ap-card .card-text { color: #5a6353; }
 
 /* ===================================================================
    AgroPulse — estilo personalizado
@@ -302,6 +128,21 @@ h1, h2, h3, .navbar-brand {
 }
 .ap-monitor-id { font-size: 0.78rem; color: rgba(255,255,255,0.6); }
 
+.ap-pulse {
+  width: 100%;
+  height: 110px;
+  display: block;
+}
+.ap-pulse path {
+  fill: none;
+  stroke: var(--ap-ambar);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: ap-draw 3s ease-in-out infinite;
+}
 .ap-metric-num {
   font-family: "Sora", sans-serif;
   font-weight: 700;
@@ -393,3 +234,21 @@ h1, h2, h3, .navbar-brand {
   padding: 3rem 0;
 }
 .ap-footer-text { color: rgba(255, 255, 255, 0.7); font-size: 0.92rem; }
+
+/* ----------------------------- Animações ----------------------------- */
+@keyframes ap-draw {
+  0%   { stroke-dashoffset: 1000; }
+  60%  { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 0; }
+}
+@keyframes ap-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.25; }
+}
+
+/* Acessibilidade: respeita quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  .ap-pulse path { animation: none; stroke-dashoffset: 0; }
+  .ap-live-dot { animation: none; }
+  body { scroll-behavior: auto; }
+}
