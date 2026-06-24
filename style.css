@@ -1,3 +1,4 @@
+
 /* ===================================================================
    AgroPulse — estilo personalizado
    Carregado DEPOIS do Bootstrap para sobrescrever o que for preciso.
@@ -64,3 +65,11 @@ h1, h2, h3, .navbar-brand {
   background-color: #fff;
   color: var(--ap-verde-escuro);
 }
+
+/* ----------------------------- Navbar ----------------------------- */
+.ap-navbar {
+  background-color: rgba(20, 54, 1, 0.92);
+  backdrop-filter: blur(6px);
+}
+.ap-navbar .nav-link { font-weight: 500; }
+.ap-navbar .nav-link:hover { color: var(--ap-ambar); }
